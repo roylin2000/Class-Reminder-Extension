@@ -3,16 +3,8 @@ var timeStart = document.querySelector('#time-start');
 var day = document.querySelector('#weekday');
 var link = document.querySelector('#link');
 var saveClass = document.querySelector("#save-class");
-//let changeColor = document.getElementById('changeColor');
-
-// chrome.storage.sync.get('color', function(data) {
-//   changeColor.style.backgroundColor = data.color;
-//   changeColor.setAttribute('value', data.color);
-// });
 
 saveClass.onclick = function() {
-    //
-    
 
     var d = new Date();
     
@@ -28,11 +20,6 @@ saveClass.onclick = function() {
         
         chrome.storage.local.set(classes);
     });
-    /////////////////////////////
-    
-    // console.log("clicked! " + d.toString() + ", it is " + d.getDay());
-    // chrome.alarms.create("what", {when: Date.now() + 3000});
-
 
 };
 

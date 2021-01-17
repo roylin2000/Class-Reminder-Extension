@@ -3,9 +3,6 @@ chrome.runtime.onMessage.addListener(
         console.log("just lmk whneaweasd")
     if (!sender.tab)
     {
-        console.log("why no work")
-
-
         var body = document.getElementsByTagName("body")[0];
         var notif = document.createElement("div");
         var hyplink = document.createElement("a");
@@ -15,15 +12,8 @@ chrome.runtime.onMessage.addListener(
         notif.setAttribute("id", "notif");
         notif.setAttribute("class","notif-class");
         notif.appendChild(hyplink);
-        //notif.style.width = "50%";
-        // notif.style.top = "10px";
         body.prepend(notif)
 
         sendResponse({status: "complete"});
     }
   });
-
-// window.onload=function(){
-//     console.log("page load!");
-//     alert("wtf");
-// }

@@ -1,7 +1,7 @@
 {
-    "name": "Class notification",
+    "name": "Class reminder",
     "version": "1.0",
-    "description": "Build an Extension!",
+    "description": "Reminds you when you have class!",
     "permissions": ["tabs","activeTab", "declarativeContent", "storage","alarms"],
     "background": {
         "scripts": ["background.js"],

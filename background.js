@@ -19,7 +19,6 @@ function setnewdaytimer(){
     if(window.newdaytimer) clearTimeout(newdaytimer);
     var now= new Date,
     tomorrow= new Date(now.getFullYear(), now.getMonth(), now.getDate()+1); 
-    //console.log(tomorrow-now)
     window.newdaytimer= setTimeout(newdayalarm, Math.abs(tomorrow-now));
 };
 
