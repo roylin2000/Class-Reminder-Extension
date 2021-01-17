@@ -1,0 +1,21 @@
+{
+    "name": "Class notification",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "permissions": ["tabs","activeTab", "declarativeContent", "storage","alarms"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+          "matches":["<all_urls>"],
+          "js": ["alarms.js"],
+          "css": ["alarms.css"]
+        }
+    ],
+    "manifest_version": 2
+  }

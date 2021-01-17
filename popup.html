@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+
+  <body>
+    <div id="class-container">
+        
+        <ul id="classes"></ul>
+    </div>
+    <div class="container">
+        <h2>Add a class</h2>
+        <label for="class-name">Class name</label>
+        <textarea class="form-control" type="text" id="class-name" placeholder="Class Name"></textarea>
+
+        <div>
+            <label for="time-start">Time of class</label>
+            </br>
+            <input type="time" id="time-start"> </input>
+        </div>
+
+        <div name="default">
+            <label for="Weekday">Day of class</label>
+            </br>
+            <select name="Weekday" id="weekday">
+                <option value="" disabled selected>Select your option</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thrusday">Thrusday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+        </div>
+
+        <div name="default"></div>
+        <label for="link">Class link</label>
+            <textarea placeholder="Link for class" id="link"></textarea>
+        </div>
+        </br>
+        
+        <div style="text-align: center;">
+            <button id="save-class">Save class</button>
+            <script src="popup.js"></script>
+        </div>
+        
+
+    </div>
+    
+  </body>
+
+
+
+</html>
